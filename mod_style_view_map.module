@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implements hook_views_api().
+ */
+function mod_style_view_map_views_api()
+{
+    return array(
+        'api' => '3.0'
+    );
+}

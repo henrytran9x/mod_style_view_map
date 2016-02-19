@@ -1,0 +1,10 @@
+name = Style View Map
+description = Provide style format View map
+package = Custom module - Required
+core = 7.x
+version = "1.0"
+dependencies[] = views
+dependencies[] = geofield
+dependencies[] = geophp
+
+files[] = includes/mod_plugin_style_view_map.inc
