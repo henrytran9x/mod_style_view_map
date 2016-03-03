@@ -97,17 +97,17 @@
             }
           }
 
-         for (first in features) break;
-         if (first!='type') {
-            if (resetZoom) {
-              map.fitBounds(range);
-            } else {
-              map.setCenter(range.getCenter());
-            }
-          } else {
+           if(map_settings.center != null){
             var center = map_settings.center;
             map.setCenter(new google.maps.LatLng(center.lat, center.lon));
-          }
+            }
+            else{
+               if (resetZoom) {
+                  map.fitBounds(range);
+              } else {
+                  map.setCenter(range.getCenter());
+              }
+            }
         }
         
         function placeFeature(feature, map, range) {
